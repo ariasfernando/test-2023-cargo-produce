@@ -1,0 +1,19 @@
+mat-card {
+    margin-top: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+
+mat-card-title {
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-card-content {
+    padding: 1rem;
+}
+
+mat-card-footer {
+    padding-top: 1rem;
+}

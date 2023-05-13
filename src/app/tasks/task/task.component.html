@@ -1,0 +1,17 @@
+<mat-card>
+    <mat-card-title>
+        <h2>{{ task.name }}</h2>
+        <select #select (change)="onSelectChange()">
+            <option *ngFor="let priority of (Priority | keyvalue)">
+                {{ priority.value }}
+            </option>
+        </select>
+    </mat-card-title>
+    <mat-card-actions>
+        <app-timer 
+            [timeSpent]="task.timeSpent"
+            (updateSpentTime)="getNewSpentTime($event)"></app-timer>
+    </mat-card-actions>
+    <mat-card-footer>Spent Time: {{ showSpentTime() }}</mat-card-footer>
+</mat-card>
+

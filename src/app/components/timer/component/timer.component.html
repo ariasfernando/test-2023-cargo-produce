@@ -1,0 +1,14 @@
+<div class="timer__countdown">
+    <span>Remaining time: </span>
+    <countdown #cd 
+        [config]="{
+            demand: true, 
+            leftTime: getLeftTime(),
+            format: 'mm:ss'
+        }">
+    </countdown>
+</div>
+<div class="timer__buttons">
+    <button mat-raised-button color="warn" (click)="pauseTimer()" [disabled]="!working">Stop</button>
+    <button mat-raised-button color="primary" (click)="startTimer()" [disabled]="working">Start</button>    
+</div>

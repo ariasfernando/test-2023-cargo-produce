@@ -1,0 +1,13 @@
+
+<mat-form-field>
+    <mat-label>Search</mat-label>
+    <input id="search" matInput [(ngModel)]="textFilter">
+</mat-form-field>
+
+<app-task 
+    *ngFor="let task of provideTasks()"
+    [task]="task"
+    (updateTask)="updateTask($event)">
+</app-task>
+<br/>
+<p><b>Total spent time: {{ totalSpentTime() }}</b></p>

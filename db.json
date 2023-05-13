@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 0,
+      "name": "Create the template",
+      "timeSpent": 340,
+      "priority": "high"
+    },
+    {
+      "id": 1,
+      "name": "Fill data in the view",
+      "timeSpent": 1100,
+      "priority": "medium"
+    },
+    {
+      "id": 2,
+      "name": "Complete user flow",
+      "timeSpent": 20,
+      "priority": "low"
+    }
+  ]
+}
